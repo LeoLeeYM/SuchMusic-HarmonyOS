@@ -65,3 +65,11 @@ Web 完整构建后同签名覆盖安装。仍使用现有 api.enzymeym.top/lyri
 根目录 .env.example 提供可选 VITE_SPARK_API_KEY；复制到忽略的 .env.local 后仅供个人调试 AI 翻译。移动/桌面 Vite 显式读取根目录配置。缺失时 AI 翻译报配置错误，逐字歌词本地算法不依赖该值。VITE 值会嵌入客户端，公共构建保持为空。签名、备份、设备截图、依赖和生成产物均不上传。
 
 新检出使用 Node.js 22、pnpm 10 与已有 lockfile；先 npx --yes pnpm@10.34.9 install --frozen-lockfile --ignore-scripts，再执行 scripts/build.sh。未签名构建不要求开发者登录；真机安装使用自己的开发者调试签名。
+
+## 2026-10-27：GitHub Release HAP 分发
+
+发布标签 `v1.5.0-harmonyos-preview.1`，应用 1.5.0/1500001，构建源码 `574318540355bb32506464f94e613d81cd06e9db`。用户明确要求上传未签名版本，仅发布 `SuchMusic-HarmonyOS-1.5.0-unsigned.hap` 和 `SHA256SUMS.txt`。源码树仍不包含安装包。下载者必须用自己的适用证书和 Profile 签名；debug 构建不等于市场 release 模式，Web 调试仍开启。
+
+构建入口仍是 `scripts/build.sh`。在已恢复依赖的干净检出中，将 `SUCHMUSIC_BUILD_DIR` 指向独立的纯 ASCII 目录，以 `VITE_SPARK_API_KEY='' VITE_SUPABASE_URL='' VITE_SUPABASE_KEY=''` 禁止嵌入本机账号配置。本次独立构建目录为 `~/.cache/suchmusic-harmonyos/releases/v1.5.0-harmonyos-preview.1/project`；曾复制本机签名配置用于初步打包，但上传只选择 `entry-default-unsigned.hap`。复现未签名包不需要复制签名，脚本会使用空签名模板。
+
+发布使用 gh release 的草稿附件上传、文件/校验和检查，再公开为预发布；Release 不标记 latest。使用 SHA256SUMS.txt 校验下载文件。本轮未运行 deploy.sh 或安装手机，不改变手机用户数据。更正包用新版本发布，勿静默替换同名附件；撤回时移除本次 Release/附件，保留源码提交和审计记录。

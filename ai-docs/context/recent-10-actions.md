@@ -1,5 +1,12 @@
 # 最近操作
 
+## 2026-10-27 GitHub Release 未签名 HAP
+
+- 内容：按用户要求发布未签名 HAP，不上传已签名包；版本 1.5.0/1500001，tag v1.5.0-harmonyos-preview.1，源码 5743185。
+- 文件：ai-docs/changelog/2026-10-27-hap-release.md、architecture/deployment.md、context/recent-10-actions.md；HAP 和 SHA256SUMS.txt 为 Release 附件，不进入 Git。
+- 状态：隔离工程 Web/ArkTS 构建成功，ZIP 完整性、资源和凭证检查通过，签名工具确认缺少签名块；已公开发布 GitHub 预发布，附件回下载 SHA-256 一致，仅含未签名 HAP 与校验文件。
+- 后续：下载者自行签名后安装；debug 模式保留 Web 调试，不是应用市场发行包，本轮未安装真机；既有类型检查和功能验收限制保持。
+
 ## 2026-10-27 GitHub 鸿蒙源码同步
 
 - 内容：将当前鸿蒙版及共用源码同步到 LeoLeeYM/SuchMusic-HarmonyOS 的 main；在远端初始化提交上追加，不改原工作区 origin、不带入上游历史。

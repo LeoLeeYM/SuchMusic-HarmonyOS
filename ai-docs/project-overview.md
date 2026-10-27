@@ -9,3 +9,5 @@
 - 详情：[移植记录](changelog/2026-10-24-harmonyos-port.md)、[部署](architecture/deployment.md)、[已知问题](context/known-issues.md)。最初的 [可行性评估](architecture/harmonyos-feasibility.md) 保留为历史材料。
 - 原有工作区已有多处修改和未跟踪源码；不能把整个 Git diff 视为本次移植修改，禁止覆盖或 reset。
 - 许可声明以 LICENSE、NOTICE 为准。源码已同步到 LeoLeeYM/SuchMusic-HarmonyOS 的 main 分支；未上架应用市场。
+
+- 2026-10-27：已发布 GitHub 体验版 `v1.5.0-harmonyos-preview.1`，提供未签名 HAP（需自行签名后安装）及 SHA-256，未上架应用市场。详见 [打包发布记录](changelog/2026-10-27-hap-release.md)。
