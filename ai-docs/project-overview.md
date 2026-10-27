@@ -8,4 +8,4 @@
 - 在 HUAWEI Pura X View（API 26）构建、调试签名、安装并进行真机验证。当前属于核心链路技术验证，尚非完整功能发布版。
 - 详情：[移植记录](changelog/2026-10-24-harmonyos-port.md)、[部署](architecture/deployment.md)、[已知问题](context/known-issues.md)。最初的 [可行性评估](architecture/harmonyos-feasibility.md) 保留为历史材料。
 - 原有工作区已有多处修改和未跟踪源码；不能把整个 Git diff 视为本次移植修改，禁止覆盖或 reset。
-- 许可声明以 LICENSE、NOTICE 为准。源码同步到 LeoLeeYM/SuchMusic-HarmonyOS；未上架应用市场。
+- 许可声明以 LICENSE、NOTICE 为准。源码已同步到 LeoLeeYM/SuchMusic-HarmonyOS 的 main 分支；未上架应用市场。

@@ -4,7 +4,7 @@
 
 - 内容：将当前鸿蒙版及共用源码同步到 LeoLeeYM/SuchMusic-HarmonyOS 的 main；在远端初始化提交上追加，不改原工作区 origin、不带入上游历史。
 - 文件：README.md、README-Android.md、NOTICE、.gitignore、.env.example、spark.ts、Vite 配置、ai-docs；鸿蒙及共用源码首次纳入目标仓库。
-- 状态：独立检出依赖恢复成功，50 项相关测试通过，Web/ArkTS 构建生成未签名 HAP；全量类型检查仍为既有 songExport.ts 未使用函数错误。
+- 状态：独立检出依赖恢复成功，50 项相关测试通过，Web/ArkTS 构建生成未签名 HAP；全量类型检查仍为既有 songExport.ts 未使用函数错误。用户完成 GitHub 授权后，源码提交 56d6200 已正常推送到目标仓库 main，保留初始化历史。
 - 保护：本机备份 source-20261027-210537.tar.gz；AI 凭证迁移到忽略的 .env.local；证书/构建产物/设备截图不上传。
 - 后续：维持已知功能限制；不代表市场发布或新增真机验收。
 

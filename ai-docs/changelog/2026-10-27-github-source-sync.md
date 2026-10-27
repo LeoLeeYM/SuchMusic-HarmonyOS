@@ -35,3 +35,8 @@
 - 源码与产物凭证模式扫描没有残留密钥；依赖、签名、本机配置及备份未纳入提交。
 - typecheck:web 仍只有原 songExport.ts:108 的 TS6133，不宣称全量类型检查通过。
 - 本次未执行真机安装或重新验证播放效果。
+
+## 同步状态
+2026-10-27 用户完成 GitHub 登录后，源码提交 56d6200107e4c3a48b88a6fda7441f3d4975969b 已成功推送到 LeoLeeYM/SuchMusic-HarmonyOS 的 main 分支，保留原初始化提交 1c7bce7，未强推。后续文档提交补齐本次同步状态。
+
+发布源码共 381 个文件；完整 Git bundle 已留存在本机 .local-backups/github-harmonyos-20261027.bundle（仅本机备份，不上传）。此同步仅发布源代码，不包含 HAP 或新的真机部署。
