@@ -1,0 +1,64 @@
+node_modules
+dist
+out
+.DS_Store
+.eslintcache
+*.log*
+symphonia-napi-decoder
+.VSCodeCounter
+
+tests
+native
+.env.local
+src/renderer/src/utils/supabase.ts
+.figma
+.vscode
+
+# ===== 安卓移动端（社区版）=====
+# 构建产物（可再生成）
+dist-mobile
+android/app/build
+android/build
+android/.gradle
+android/capacitor-cordova-android-plugins
+android/app/src/main/assets/public
+android/local.properties
+*.apk
+core.*
+tsconfig.web.tsbuildinfo
+
+# 签名材料：严禁提交（发布包请通过 android/keystore.properties 本地配置）
+android/app/suchmusic-release.keystore
+android/keystore.properties
+*.keystore
+*.jks
+
+# HarmonyOS local builds, signing and source snapshots
+.local-backups/
+harmonyos/**/build/
+harmonyos/**/.hvigor/
+harmonyos/**/oh_modules/
+harmonyos/**/local.properties
+harmonyos/SuchMusic/build-profile.json5
+harmonyos/**/entry/src/main/resources/rawfile/web/
+*.p12
+*.p7b
+
+# Local credentials, IDE state and generated diagnostics
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cer
+*.hap
+*.app
+*.tsbuildinfo
+.idea/
+.preview/
+*.vite.config.*.mjs
+electron.vite.config.*.mjs
+# Device screenshots remain local validation evidence
+ai-docs/validation/*.png
+ai-docs/validation/*.jpeg
+ai-docs/validation/*.jpg
